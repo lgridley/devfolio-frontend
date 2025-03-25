@@ -1,31 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Lauren Wood | Portfolio</title>
+    <meta name="description" content="Portfolio website of Lauren Wood, bioinformatician and data analyst.">
+    <meta name="keywords" content="Bioinformatics, Data Analytics, Portfolio, Lauren Wood, Healthcare Technology">
+  
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - DevFolio Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">Lauren Wood</h1>
+      </a>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#chatbot">Chatbot</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <section id="hero" class="hero section dark-background">
+      <img src="assets/img/profile-img.jpg" alt="Lauren Wood">
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up">
+        <h2>I am Lauren Wood</h2>
+        <p><span class="typed" data-typed-items="Bioinformatician, Data Analyst, Programmer, Project Coordinator"></span></p>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+          <div class="col-md-6">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="Lauren Wood">
+          </div>
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About Me</h4>
+              <p>I’m a Bioinformatician and Systems Analyst who specializes in transforming complex health data into actionable insights. With experience in Python, R, SQL, and machine learning, I create efficient data pipelines and analytics tools for public health and biomedical research.</p>
+              <p>I love using data to tell stories, build tools, and solve meaningful problems—whether automating research workflows or developing AI-powered chatbots.</p>
+              <p>Let’s connect and collaborate on something impactful!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <p>Bioinformatician | Data Analyst | Programmer</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>M.S. Bioinformatics</h4>
+              <h5>2015 - 2017</h5>
+              <p><em>UNC Charlotte</em></p>
+              <p>Focused on genomic data processing, statistical methods, and research applications.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Systems Programmer/Analyst III</h4>
+              <h5>2017 - 2025</h5>
+              <p><em>RTI International</em></p>
+              <ul>
+                <li>Led data analytics and automation projects for research and healthcare quality programs.</li>
+                <li>Developed NLP pipelines, metadata systems, and custom Python/R tools for data validation and reporting.</li>
+                <li>Worked on federal health contracts, including CMS and NIH-funded studies.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <p>Selected projects demonstrating data analytics, automation, and research support.</p>
+      </div>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/phenx.jpg" class="img-fluid" alt="PhenX">
+              <div class="portfolio-info">
+                <h4>PhenX Toolkit Expansion</h4>
+                <p>Curated metadata for social determinants of health protocols and built CDEs.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/pfdn.jpg" class="img-fluid" alt="PFDN">
+              <div class="portfolio-info">
+                <h4>Pelvic Floor Disorders Network (PFDN)</h4>
+                <p>Created reusable data dictionaries and automated metadata extraction tools.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="portfolio-item">
+              <img src="assets/img/portfolio/chatbot.jpg" class="img-fluid" alt="RAG Chatbot">
+              <div class="portfolio-info">
+                <h4>Resume-Integrated Chatbot</h4>
+                <p>Built a Streamlit + FastAPI chatbot using RAG architecture with FAISS & OpenAI.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chatbot" class="section">
+      <div class="container">
+        <h2>AI Chatbot</h2>
+        <iframe src="https://rag-chatbot-io51.onrender.com" width="100%" height="500px"></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Let’s build something data-driven and impactful together.</p>
+      </div>
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="info">
+              <p><strong>Location:</strong> Fort Mill, SC</p>
+              <p><strong>Email:</strong> lrngwood@gmail.com</p>
+              <p><strong>Phone:</strong> (704) 562-4362</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="social-links">
+              <a href="https://github.com/lgridley"><i class="bi bi-github"></i></a>
+              <a href="https://linkedin.com/in/lauren-gridwood"><i class="bi bi-linkedin"></i></a>
+              <a href="mailto:lrngwood@gmail.com"><i class="bi bi-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -166,17 +319,17 @@
           <h4>About Me</h4>
           <p>
             I am a bioinformatician, data analyst, and programmer with a passion for integrating technology into healthcare research.
-            With expertise in **data science, medical data processing, and programming**, I specialize in creating efficient and scalable
+            With expertise in data science, medical data processing, and programming, I specialize in creating efficient and scalable
             solutions for complex research projects.
           </p>
           <p>
-            My experience includes leading **data analytics, automation, and project coordination** efforts across multiple industries.
-            I have worked extensively in **Python, R, SQL, and machine learning**, using my skills to extract meaningful insights
+            My experience includes leading data analytics, automation, and project coordination efforts across multiple industries.
+            I have worked extensively in Python, R, SQL, and machine learning, using my skills to extract meaningful insights
             from large-scale datasets.
           </p>
           <p>
             Beyond analytics, I enjoy **scientific writing, crafting educational tools, and working on creative data-driven projects**.
-            I am always seeking opportunities to combine my **analytical and creative** skills to make an impact in research and beyond.
+            I am always seeking opportunities to combine my analytical and creative skills to make an impact in research and beyond.
           </p>
         </div>
       </div>
@@ -234,8 +387,8 @@
           <p><em>Experienced Bioinformatician and Data Analyst with expertise in project coordination, data analytics, and programming. Passionate about leveraging technology to improve healthcare and research outcomes.</em></p>
           <ul>
             <li>Fort Mill, SC</li>
-            <li>(Your phone number here)</li>
-            <li>(Your email here)</li>
+            <li>704.562.4362</li>
+            <li>lrngwood@gmail.com</li>
           </ul>
         </div><!-- End Resume Item -->
 
@@ -424,7 +577,7 @@
     <section id="chatbot">
       <div class="container">
         <h2>AI Chatbot</h2>
-        <iframe src="https://rag-chatbot-io51.onrender.com" width="100%" height="500px"></iframe>
+        <iframe src="https://rag-chatbot-io51.onrender.com" width="100%" height="500px" style="border: 2px solid #ddd; border-radius: 10px;"></iframe>
       </div>
     </section>
     
@@ -903,50 +1056,24 @@
 
   </main>
 
-  <footer id="footer" class="footer accent-background">
-
-    <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <p>&copy; 2025 Lauren Wood. All rights reserved.</p>
     </div>
-
   </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
+  
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
-
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
+  
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+  
+  </body>
+  
+  </html>
