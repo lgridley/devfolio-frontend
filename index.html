@@ -197,26 +197,40 @@
       </div>
     </section>
 
-  </main>
+    <main class="main">
+      <!-- content omitted for brevity -->
+    </main>
 
-  <footer id="footer" class="footer">
-    <div class="container text-center">
-      <p>&copy; 2025 Lauren Wood. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer id="footer" class="footer">
+      <div class="container text-center">
+        <p>&copy; 2025 Lauren Wood. All rights reserved.</p>
+        <p>Source Code: <a href="https://github.com/lgridley/devfolio-frontend" target="_blank">Frontend GitHub Repo</a> | <a href="https://github.com/lgridley/rag-chatbot" target="_blank">Chatbot GitHub Repo</a></p>
+        <p id="last-commit">Last Updated: Fetching...</p>
+      </div>
+    </footer>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/js/main.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- GitHub Commit Fetch -->
+    <script>
+      fetch("https://api.github.com/repos/lgridley/devfolio-frontend/commits")
+        .then(response => response.json())
+        .then(data => {
+          const commitDate = new Date(data[0].commit.author.date);
+          const formatted = commitDate.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' });
+          document.getElementById("last-commit").innerText = `Last Updated: ${formatted}`;
+        });
+    </script>
 
   </body>
 </html>
